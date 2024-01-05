@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>LW1</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -40,11 +40,12 @@
 
             <div class="main-right-bottom">
                 <div class="main-right-bottom-left">
-                    <form id="objectForm">
-                        <label for="numberOfElements">Кількість елементів:</label>
-                        <input type="number" id="numberOfElements" name="numberOfElements" required>
-                        <button type="button" onclick="createObject()">Створити об'єкт</button>
+                    <form id="carouselForm">
+                        <label for="numItems">Number of items:</label>
+                        <input type="number" id="numItems" name="numItems" min="1" value="3">
+                        <button type="button" onclick="createCarousel()">Create Carousel</button>
                     </form>
+                    <div id="carouselContainer"></div>
                 </div>
 
                 <div class="main-right-bottom-right">
